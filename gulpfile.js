@@ -3,7 +3,10 @@ const sass = require("gulp-sass")(require("sass"));
 const browserSync = require("browser-sync").create();
 
 gulp.task("css", function () {
-  return gulp.src("./scss/style.scss").pipe(sass()).pipe(gulp.dest("./css"));
+  return gulp
+    .src("./scss/style.scss")
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("./css"));
 });
 
 gulp.task("server", function () {
@@ -18,3 +21,5 @@ gulp.task("reload", function (done) {
 });
 
 gulp.watch("scss/**/*.{scss, sass}", gulp.series("css", "reload"));
+
+gulp.task("start", gulp.series("css", "server"));
