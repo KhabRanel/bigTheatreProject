@@ -1,0 +1,19 @@
+@use "./veriables" as *;
+@use "./mixins" as mix;
+
+.popup {
+  &__input-field::placeholder,
+  &__hint {
+    color: $gray;
+    font-family: $font-family;
+    @include mix.font-mixin(
+      14px,
+      $letter-spacing-param: 0,
+      $font-weight-param: 600
+    );
+  }
+
+  &__hint {
+    @include mix.font-mixin($font-weight-param: 400);
+  }
+}

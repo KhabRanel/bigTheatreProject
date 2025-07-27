@@ -1,0 +1,28 @@
+@use "../veriables" as *;
+@use "../mixins" as mix;
+
+.header {
+  &__nav-link {
+    text-transform: uppercase;
+    @include mix.font-mixin(18px, 25px);
+  }
+
+  &__tel {
+    border-bottom: 2px solid $gold;
+    @include mix.font-mixin(16px, 22px, 0.05em);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @include mix.font-mixin(64px, 87px);
+  }
+
+  &__desc {
+    font-family: $font-family;
+    @include mix.font-mixin(
+      14px,
+      $letter-spacing-param: 0,
+      $font-weight-param: 400
+    );
+  }
+}

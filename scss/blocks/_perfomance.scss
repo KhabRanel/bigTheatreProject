@@ -1,0 +1,9 @@
+@use "./veriables" as *;
+@use "./mixins" as mix;
+
+.perfomance {
+  &__desc {
+    text-transform: uppercase;
+    @include mix.font-mixin(24px, 33px, 0.05em);
+  }
+}

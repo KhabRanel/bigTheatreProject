@@ -1,0 +1,25 @@
+@use "./veriables" as *;
+@use "./mixins" as mix;
+
+.footer {
+  &__contact-list-item-link,
+  &__contact-adress {
+    text-transform: uppercase;
+    @include mix.font-mixin(21px, 29px);
+  }
+
+  &__contact-adress {
+    font-style: inherit;
+  }
+
+  &__author-desc-content,
+  &__author-desc-link {
+    color: $gray;
+    font-family: $font-family;
+    @include mix.font-mixin(
+      12px,
+      $letter-spacing-param: 0,
+      $font-weight-param: 400
+    );
+  }
+}

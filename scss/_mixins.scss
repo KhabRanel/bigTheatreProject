@@ -12,9 +12,11 @@
 @mixin font-mixin(
   $font-size-param: 16px,
   $line-height-param: 150%,
+  $letter-spacing-param: 0.1em,
   $font-weight-param: 700
 ) {
   font-size: $font-size-param;
   line-height: $line-height-param;
   font-weight: $font-weight-param;
+  letter-spacing: $letter-spacing-param;
 }

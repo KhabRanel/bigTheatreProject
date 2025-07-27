@@ -1,16 +1,26 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fontsopensans-regular.woff2") format("woff2"), url("../fontsopensans-regular.woff") format("woff");
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fontsopensans_condensed-light.woff2") format("woff2"), url("../fontsopensans_condensed-light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
+  font-weight: 600;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fontsopensans_condensed-bold.woff2") format("woff2"), url("../fontsopensans_condensed-bold.woff") format("woff");
+  src: url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/opensans_condensed-light.woff2") format("woff2"), url("../fonts/opensans_condensed-light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/opensans_condensed-bold.woff2") format("woff2"), url("../fonts/opensans_condensed-bold.woff") format("woff");
   font-weight: 700;
 }
 html,
@@ -147,4 +157,146 @@ body {
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
+  letter-spacing: 0.1em;
+  background: #333333;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  color: inherit;
+  background: #d1a954;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.section-title-gold {
+  color: #d1a954;
+}
+
+.header__nav-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.header__tel {
+  border-bottom: 2px solid #d1a954;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.header__title {
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 87px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.header__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.about__subtitle {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.about__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.about .digits__desc {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.about .digits__desc-gold {
+  color: #d1a954;
+}
+
+.perfomance__desc {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.review .years__item-desc {
+  font-size: 72px;
+  line-height: 98px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d1a954;
+}
+.review__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.footer__contact-list-item-link, .footer__contact-adress {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.footer__contact-adress {
+  font-style: inherit;
+}
+.footer__author-desc-content, .footer__author-desc-link {
+  color: #989898;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.popup__input-field::placeholder, .popup__hint {
+  color: #989898;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.popup__hint {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }

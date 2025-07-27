@@ -1,0 +1,20 @@
+@use "./veriables" as *;
+@use "./mixins" as mix;
+
+.review {
+  .years {
+    &__item-desc {
+      @include mix.font-mixin(72px, 98px);
+      color: $gold;
+    }
+  }
+
+  &__title {
+    font-family: $font-family;
+    @include mix.font-mixin(
+      36px,
+      $letter-spacing-param: 0,
+      $font-weight-param: 700
+    );
+  }
+}
