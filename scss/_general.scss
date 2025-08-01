@@ -13,15 +13,6 @@ a {
   text-decoration: none;
 }
 
-.button {
-  color: inherit;
-  background: $gold;
-  border: none;
-  font-family: inherit;
-  text-transform: uppercase;
-  @include mix.font-mixin(18px, 25px);
-}
-
 .section-title {
   text-transform: uppercase;
   @include mix.font-mixin(48px, 65px, $font-weight-param: 300);
@@ -29,4 +20,9 @@ a {
 
 .section-title-gold {
   color: $gold;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
 }

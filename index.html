@@ -8,39 +8,41 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link">Главная</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">О театре</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Наши постановки</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Партнеры театра</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="header__tel" href="tel:+74951234567">+7 495 123-45-67</a>
-      <h1 class="header__title">Большой театр</h1>
-      <p class="header__desc">
-        Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с
-        1886 года — Петербургская консерватория. Первое постоянное в
-        Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных
-        зданий в Европе XVIII.
-      </p>
-      <a href="#" class="header__link-poster button">Афиша</a>
-      <img src="" alt="Большой театр" />
-      <button type="button">Пред</button>
-      <button type="button">След</button>
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">О театре</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Наши постановки</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Партнеры театра</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__tel" href="tel:+74951234567">+7 495 123-45-67</a>
+        <h1 class="header__title">Большой театр</h1>
+        <p class="header__desc">
+          Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,
+          с 1886 года — Петербургская консерватория. Первое постоянное в
+          Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных
+          зданий в Европе XVIII.
+        </p>
+        <a href="#" class="header__link-poster button">Афиша</a>
+        <img src="./dist/img/first-screen-slider.webp" alt="Большой театр" />
+        <button type="button" class="header__btn">Пред</button>
+        <button type="button" class="header__btn">След</button>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <section class="about">
         <h2 class="about__title section-title">
           <span class="section-title-gold">О</span> театре
@@ -64,18 +66,23 @@
             <h3 class="about__subtitle">немного о цифрах</h3>
             <ul class="about__digits digits">
               <li class="digits__item">
+                <img
+                  src="./dist/img/about-armchair.webp"
+                  alt="about-armchair"
+                />
                 <p class="digits__desc">
                   <span class="digits__desc-gold">1600</span> посадочный мест
                 </p>
               </li>
               <li class="digits__item">
+                <img src="./dist/img/about-theater.webp" alt="about-theater" />
                 <p class="digits__desc">
                   <span class="digits__desc-gold">350</span> лет истории
                 </p>
               </li>
             </ul>
           </div>
-          <img src="" alt="photo" />
+          <img src="./dist/img/about-screen.webp" alt="about-screen" />
         </div>
       </section>
       <section class="perfomance">
@@ -83,19 +90,23 @@
           <span class="section-title-gold">Наши</span> постановки
         </h2>
         <div class="perfomance__item">
-          <h2 class="perfomance__desc">ОСКАР 2020</h2>
-          <img src="" alt="ОСКАР 2020" />
+          <h2 class="perfomance__item-desc perfomance__item-desc--1">
+            ОСКАР 2020
+          </h2>
         </div>
         <div class="perfomance__item">
-          <h2 class="perfomance__desc">золотой грамофон</h2>
-          <img src="" alt="золотой грамофон" />
+          <h2 class="perfomance__item-desc perfomance__item-desc--2">
+            золотой грамофон
+          </h2>
         </div>
         <div class="perfomance__item">
-          <h2 class="perfomance__desc">золотой грамофон</h2>
-          <img src="" alt="золотой грамофон" />
+          <h2 class="perfomance__item-desc perfomance__item-desc--3">
+            золотой грамофон
+          </h2>
         </div>
       </section>
       <section class="review">
+        <img src="./dist/img/review-screen.webp" alt="review-screen" />
         <div class="review__item">
           <ul class="review__item-list years">
             <li class="years__item">
@@ -110,7 +121,7 @@
           </ul>
         </div>
         <div class="review__stars">
-          <img src="" alt="stars" />
+          <img src="./img/stars.svg" alt="stars" />
         </div>
         <h2 class="review__title">
           Лучший театр по мнению театральных критиков Парижа
@@ -121,17 +132,25 @@
           <span class="section-title-gold">Партнеры</span> театра
         </h2>
         <ul class="partner__list">
-          <li class="partner__list-item"><img src="" alt="partner" /></li>
-          <li class="partner__list-item"><img src="" alt="partner" /></li>
-          <li class="partner__list-item"><img src="" alt="partner" /></li>
-          <li class="partner__list-item"><img src="" alt="partner" /></li>
+          <li class="partner__list-item">
+            <img src="./dist/img/partner.webp" alt="partner" />
+          </li>
+          <li class="partner__list-item">
+            <img src="./dist/img/partner.webp" alt="partner" />
+          </li>
+          <li class="partner__list-item">
+            <img src="./dist/img/partner.webp" alt="partner" />
+          </li>
+          <li class="partner__list-item">
+            <img src="./dist/img/partner.webp" alt="partner" />
+          </li>
         </ul>
         <button type="button" class="partner__button button">
           Стать меценатом
         </button>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__contact">
         <h2 class="footer__contact-title section-title">
           <span class="section-title-gold">Контакты</span>
@@ -171,7 +190,9 @@
       </div>
     </footer>
     <div class="popup">
-      <button class="popup__close-btn" type="button"></button>
+      <button class="popup__close-btn" type="button">
+        <img src="./img/cross.svg" alt="cross" />
+      </button>
       <form action="#" class="popup__form">
         <label class="popup__label">
           <span>Имя</span>

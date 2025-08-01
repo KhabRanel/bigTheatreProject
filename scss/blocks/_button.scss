@@ -1,0 +1,12 @@
+@use "../veriables" as *;
+@use "../mixins" as mix;
+
+.button {
+  color: inherit;
+  background: $gold;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  @include mix.font-mixin(18px, 25px);
+  @include mix.flex-center();
+}

@@ -13,7 +13,37 @@
     );
   }
 
+  input,
+  textarea {
+    background: $input-gray;
+    border: 1px solid $input-gray-border;
+    padding: 0 0 0 15px;
+    box-sizing: border-box;
+  }
+
+  input {
+    width: 180px;
+    height: 39px;
+  }
+
+  textarea {
+    resize: none;
+    width: 310px;
+    height: 112px;
+  }
+
   &__hint {
     @include mix.font-mixin($font-weight-param: 400);
+  }
+
+  &__button {
+    width: 190px;
+    min-height: 51px;
+  }
+
+  &__close-btn {
+    background: transparent;
+    border: none;
+    padding: none;
   }
 }

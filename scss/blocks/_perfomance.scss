@@ -2,8 +2,23 @@
 @use "./mixins" as mix;
 
 .perfomance {
-  &__desc {
+  &__item-desc {
     text-transform: uppercase;
     @include mix.font-mixin(24px, 33px, 0.05em);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--1 {
+      background-image: url(/dist/img/perfomance-1.webp);
+    }
+
+    &--2 {
+      background-image: url(/dist/img/perfomance-2.webp);
+    }
+
+    &--3 {
+      background-image: url(/dist/img/perfomance-3.webp);
+    }
   }
 }

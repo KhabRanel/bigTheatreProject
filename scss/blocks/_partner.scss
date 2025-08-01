@@ -1,0 +1,9 @@
+@use "../veriables" as *;
+@use "../mixins" as mix;
+
+.partner {
+  &__button {
+    width: 359px;
+    min-height: 72px;
+  }
+}

@@ -167,18 +167,6 @@ a {
   text-decoration: none;
 }
 
-.button {
-  color: inherit;
-  background: #d1a954;
-  border: none;
-  font-family: inherit;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-
 .section-title {
   text-transform: uppercase;
   font-size: 48px;
@@ -191,6 +179,14 @@ a {
   color: #d1a954;
 }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(/dist/img/header-bkg.webp);
+}
 .header__nav-link {
   text-transform: uppercase;
   font-size: 18px;
@@ -219,6 +215,21 @@ a {
   font-weight: 400;
   letter-spacing: 0;
 }
+.header__link-poster {
+  width: 160px;
+  min-height: 50px;
+}
+.header__btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
 
 .about__subtitle {
   text-transform: uppercase;
@@ -244,12 +255,24 @@ a {
   color: #d1a954;
 }
 
-.perfomance__desc {
+.perfomance__item-desc {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 33px;
   font-weight: 700;
   letter-spacing: 0.05em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.perfomance__item-desc--1 {
+  background-image: url(/dist/img/perfomance-1.webp);
+}
+.perfomance__item-desc--2 {
+  background-image: url(/dist/img/perfomance-2.webp);
+}
+.perfomance__item-desc--3 {
+  background-image: url(/dist/img/perfomance-3.webp);
 }
 
 .review .years__item-desc {
@@ -265,6 +288,11 @@ a {
   line-height: 150%;
   font-weight: 700;
   letter-spacing: 0;
+}
+
+.partner__button {
+  width: 359px;
+  min-height: 72px;
 }
 
 .footer__contact-list-item-link, .footer__contact-adress {
@@ -294,9 +322,49 @@ a {
   font-weight: 600;
   letter-spacing: 0;
 }
+.popup input,
+.popup textarea {
+  background: #444444;
+  border: 1px solid #616161;
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+}
+.popup input {
+  width: 180px;
+  height: 39px;
+}
+.popup textarea {
+  resize: none;
+  width: 310px;
+  height: 112px;
+}
 .popup__hint {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
   letter-spacing: 0.1em;
+}
+.popup__button {
+  width: 190px;
+  min-height: 51px;
+}
+.popup__close-btn {
+  background: transparent;
+  border: none;
+  padding: none;
+}
+
+.button {
+  color: inherit;
+  background: #d1a954;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
