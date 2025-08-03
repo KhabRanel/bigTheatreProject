@@ -2,12 +2,17 @@
 @use "./mixins" as mix;
 
 .about {
+  &__title {
+    margin: 150px 0 100px;
+  }
+
   &__subtitle {
     text-transform: uppercase;
     @include mix.font-mixin(21px, 29px);
   }
 
   &__desc {
+    margin-top: 18px;
     font-family: $font-family;
     @include mix.font-mixin(
       16px,
@@ -16,8 +21,39 @@
     );
   }
 
+  &__wrp {
+    @include mix.flex-center();
+  }
+
+  &__item {
+    &--1 {
+      width: 449px;
+      margin-right: 27px;
+    }
+
+    &--2 {
+      width: 258px;
+      min-height: 323px;
+      margin-right: 11px;
+    }
+  }
+
+  &__img {
+    width: 369px;
+    height: 323px;
+  }
+
+  &__digits {
+    margin-top: 24px;
+  }
+
   .digits {
+    &__item {
+      margin-top: 36px;
+    }
+
     &__desc {
+      margin-top: 15px;
       @include mix.font-mixin(16px, 22px, 0.05em);
     }
 

@@ -9,37 +9,51 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link">Главная</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">О театре</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Наши постановки</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Партнеры театра</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__tel" href="tel:+74951234567">+7 495 123-45-67</a>
-        <h1 class="header__title">Большой театр</h1>
-        <p class="header__desc">
-          Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах,
-          с 1886 года — Петербургская консерватория. Первое постоянное в
-          Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных
-          зданий в Европе XVIII.
-        </p>
-        <a href="#" class="header__link-poster button">Афиша</a>
-        <img src="./dist/img/first-screen-slider.webp" alt="Большой театр" />
-        <button type="button" class="header__btn">Пред</button>
-        <button type="button" class="header__btn">След</button>
+        <div class="header__nav-wrp">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">О театре</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Наши постановки</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Партнеры театра</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__tel" href="tel:+74951234567">+7 495 123-45-67</a>
+        </div>
+        <div class="header__content-wrp">
+          <div class="header__content">
+            <h1 class="header__title">Большой театр</h1>
+            <p class="header__desc">
+              Большо́й теа́тр — петербургский театр, существовавший в 1784—1886
+              годах, с 1886 года — Петербургская консерватория. Первое
+              постоянное в Санкт-Петербурге, крупнейшее в России и одно из
+              крупнейших театральных зданий в Европе XVIII.
+            </p>
+            <a href="#" class="header__link-poster button">Афиша</a>
+          </div>
+          <div class="header__slider">
+            <img
+              class="header__slider-img"
+              src="./dist/img/first-screen-slider.webp"
+              alt="Большой театр"
+            />
+            <div class="header__btn-wrp">
+              <button type="button" class="header__btn">Пред</button>
+              <button type="button" class="header__btn">След</button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="container">
@@ -48,7 +62,7 @@
           <span class="section-title-gold">О</span> театре
         </h2>
         <div class="about__wrp">
-          <div class="about__item">
+          <div class="about__item--1">
             <h3 class="about__subtitle">Самый лучший театр СПБ</h3>
             <p class="about__desc">
               Как свидетельствуют архивные документы, первое каменное здание
@@ -62,7 +76,7 @@
               свидетельствах, годом открытия можно считать 1784 год.
             </p>
           </div>
-          <div class="about__item">
+          <div class="about__item--2">
             <h3 class="about__subtitle">немного о цифрах</h3>
             <ul class="about__digits digits">
               <li class="digits__item">
@@ -82,72 +96,85 @@
               </li>
             </ul>
           </div>
-          <img src="./dist/img/about-screen.webp" alt="about-screen" />
+          <img
+            class="about__img"
+            src="./dist/img/about-screen.webp"
+            alt="about-screen"
+          />
         </div>
       </section>
       <section class="perfomance">
         <h2 class="perfomance__title section-title">
           <span class="section-title-gold">Наши</span> постановки
         </h2>
-        <div class="perfomance__item">
-          <h2 class="perfomance__item-desc perfomance__item-desc--1">
-            ОСКАР 2020
-          </h2>
-        </div>
-        <div class="perfomance__item">
-          <h2 class="perfomance__item-desc perfomance__item-desc--2">
-            золотой грамофон
-          </h2>
-        </div>
-        <div class="perfomance__item">
-          <h2 class="perfomance__item-desc perfomance__item-desc--3">
-            золотой грамофон
-          </h2>
+        <div class="perfomance__wrp">
+          <div class="perfomance__item">
+            <h2 class="perfomance__item-desc perfomance__item-desc--1">
+              ОСКАР 2020
+            </h2>
+          </div>
+          <div class="perfomance__item">
+            <h2 class="perfomance__item-desc perfomance__item-desc--2">
+              золотой грамофон
+            </h2>
+          </div>
+          <div class="perfomance__item">
+            <h2 class="perfomance__item-desc perfomance__item-desc--3">
+              золотой грамофон
+            </h2>
+          </div>
         </div>
       </section>
       <section class="review">
-        <img src="./dist/img/review-screen.webp" alt="review-screen" />
-        <div class="review__item">
-          <ul class="review__item-list years">
-            <li class="years__item">
-              <p class="years__item-desc">2018</p>
-            </li>
-            <li class="years__item">
-              <p class="years__item-desc">2019</p>
-            </li>
-            <li class="years__item">
-              <p class="years__item-desc">2020</p>
-            </li>
-          </ul>
+        <div class="review__wrp">
+          <div class="review__item">
+            <ul class="review__item-list years">
+              <li class="years__item">
+                <p class="years__item-desc">2018</p>
+              </li>
+              <li class="years__item">
+                <p class="years__item-desc">2019</p>
+              </li>
+              <li class="years__item">
+                <p class="years__item-desc">2020</p>
+              </li>
+            </ul>
+          </div>
+          <div class="review__stars">
+            <img class="review__stars-img" src="./img/stars.svg" alt="stars" />
+            <h2 class="review__stars-title">
+              Лучший театр
+              <span class="review__stars-title-line"
+                >по мнению театральных</span
+              >
+              критиков Парижа
+            </h2>
+          </div>
         </div>
-        <div class="review__stars">
-          <img src="./img/stars.svg" alt="stars" />
-        </div>
-        <h2 class="review__title">
-          Лучший театр по мнению театральных критиков Парижа
-        </h2>
       </section>
       <section class="partner">
         <h2 class="partner__title section-title">
           <span class="section-title-gold">Партнеры</span> театра
         </h2>
-        <ul class="partner__list">
-          <li class="partner__list-item">
-            <img src="./dist/img/partner.webp" alt="partner" />
-          </li>
-          <li class="partner__list-item">
-            <img src="./dist/img/partner.webp" alt="partner" />
-          </li>
-          <li class="partner__list-item">
-            <img src="./dist/img/partner.webp" alt="partner" />
-          </li>
-          <li class="partner__list-item">
-            <img src="./dist/img/partner.webp" alt="partner" />
-          </li>
-        </ul>
-        <button type="button" class="partner__button button">
-          Стать меценатом
-        </button>
+        <div class="partner__wrp">
+          <ul class="partner__list">
+            <li class="partner__list-item">
+              <img src="./dist/img/partner.webp" alt="partner" />
+            </li>
+            <li class="partner__list-item">
+              <img src="./dist/img/partner.webp" alt="partner" />
+            </li>
+            <li class="partner__list-item">
+              <img src="./dist/img/partner.webp" alt="partner" />
+            </li>
+            <li class="partner__list-item">
+              <img src="./dist/img/partner.webp" alt="partner" />
+            </li>
+          </ul>
+          <button type="button" class="partner__button button">
+            Стать меценатом
+          </button>
+        </div>
       </section>
     </main>
     <footer class="footer container">
@@ -155,32 +182,34 @@
         <h2 class="footer__contact-title section-title">
           <span class="section-title-gold">Контакты</span>
         </h2>
-        <ul class="footer__contact-list">
-          <li class="footer__contact-list-item">
-            <a
-              href="tel:+7 (812) 123-45-55"
-              class="footer__contact-list-item-link"
-              >+7 (812) 123-45-55</a
-            >
-          </li>
-          <li class="footer__contact-list-item">
-            <a
-              href="tel:+7 (812) 123-45-66"
-              class="footer__contact-list-item-link"
-              >+7 (812) 123-45-66</a
-            >
-          </li>
-          <li class="footer__contact-list-item">
-            <a
-              href="email:info@theater.ru"
-              class="footer__contact-list-item-link"
-              >info@theater.ru</a
-            >
-          </li>
-        </ul>
-        <address class="footer__contact-adress">
-          г. санкт-петербург, невский 140
-        </address>
+        <div class="footer__contact-wrp">
+          <ul class="footer__contact-list">
+            <li class="footer__contact-list-item">
+              <a
+                href="tel:+7 (812) 123-45-55"
+                class="footer__contact-list-item-link"
+                >+7 (812) 123-45-55</a
+              >
+            </li>
+            <li class="footer__contact-list-item">
+              <a
+                href="tel:+7 (812) 123-45-66"
+                class="footer__contact-list-item-link"
+                >+7 (812) 123-45-66</a
+              >
+            </li>
+            <li class="footer__contact-list-item">
+              <a
+                href="email:info@theater.ru"
+                class="footer__contact-list-item-link"
+                >info@theater.ru</a
+              >
+            </li>
+          </ul>
+          <address class="footer__contact-adress">
+            г. санкт-петербург, невский 140
+          </address>
+        </div>
       </div>
       <div class="footer__author-desc">
         <p class="footer__author-desc-content">

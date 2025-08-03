@@ -2,6 +2,24 @@
 @use "./mixins" as mix;
 
 .footer {
+  &__contact-title {
+    margin: 112px 0 52px;
+  }
+
+  &__contact-wrp {
+    width: 1085px;
+    display: flex;
+    justify-content: center;
+    gap: 49px;
+    margin-bottom: 96px;
+  }
+
+  &__contact-list {
+    width: 665px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__contact-list-item-link,
   &__contact-adress {
     text-transform: uppercase;
@@ -10,6 +28,14 @@
 
   &__contact-adress {
     font-style: inherit;
+  }
+
+  &__author-desc {
+    @include mix.flex-space-between();
+    min-height: 48px;
+    border-top: 1px solid $gray;
+    align-items: end;
+    margin-bottom: 41px;
   }
 
   &__author-desc-content,

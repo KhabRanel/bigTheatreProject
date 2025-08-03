@@ -2,8 +2,26 @@
 @use "../mixins" as mix;
 
 .partner {
+  &__title {
+    margin: 150px 0 60px;
+  }
+
+  &__wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 78px;
+  }
+
   &__button {
+    margin: 113px 0 0;
     width: 359px;
     min-height: 72px;
+    text-align: center;
   }
 }

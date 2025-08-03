@@ -15,6 +15,7 @@ a {
 
 .section-title {
   text-transform: uppercase;
+  text-align: center;
   @include mix.font-mixin(48px, 65px, $font-weight-param: 300);
 }
 

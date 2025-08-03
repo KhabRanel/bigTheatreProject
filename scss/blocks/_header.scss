@@ -3,6 +3,17 @@
 
 .header {
   background: url(/dist/img/header-bkg.webp);
+  padding: 51px 0 179px;
+
+  &__nav-wrp {
+    @include mix.flex-space-between;
+    margin: 0 0 219px;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 63px;
+  }
 
   &__nav-link {
     text-transform: uppercase;
@@ -14,12 +25,23 @@
     @include mix.font-mixin(16px, 22px, 0.05em);
   }
 
+  &__content-wrp {
+    @include mix.flex-space-between;
+  }
+
+  &__content {
+    width: 540px;
+    min-height: 296px;
+  }
+
   &__title {
+    margin: 88px 0 50px;
     text-transform: uppercase;
     @include mix.font-mixin(64px, 87px);
   }
 
   &__desc {
+    margin: 0 0 50px;
     font-family: $font-family;
     @include mix.font-mixin(
       14px,
@@ -31,6 +53,15 @@
   &__link-poster {
     width: 160px;
     min-height: 50px;
+  }
+
+  &__slider-img {
+    width: 370px;
+    min-height: 509px;
+  }
+
+  &__btn-wrp {
+    @include mix.flex-space-between;
   }
 
   &__btn {

@@ -2,23 +2,37 @@
 @use "./mixins" as mix;
 
 .perfomance {
+  &__title {
+    margin: 119px 0 113px;
+  }
+
+  &__wrp {
+    display: flex;
+  }
+
   &__item-desc {
     text-transform: uppercase;
     @include mix.font-mixin(24px, 33px, 0.05em);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
+    width: 370px;
+    height: 478px;
+    box-sizing: border-box;
 
     &--1 {
       background-image: url(/dist/img/perfomance-1.webp);
+      padding: 34px 232px 414px 33px;
     }
 
     &--2 {
       background-image: url(/dist/img/perfomance-2.webp);
+      padding: 53px 122px 396px 57px;
     }
 
     &--3 {
       background-image: url(/dist/img/perfomance-3.webp);
+      padding: 50px 145px 398px 32px;
     }
   }
 }

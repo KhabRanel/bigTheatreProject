@@ -2,6 +2,9 @@
 @use "./mixins" as mix;
 
 .review {
+  min-height: 550px;
+  margin-top: 209px;
+
   .years {
     &__item-desc {
       @include mix.font-mixin(72px, 98px);
@@ -9,12 +12,40 @@
     }
   }
 
-  &__title {
+  &__wrp {
+    background-image: url(/dist/img/review-screen.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    padding: 126px 100px 126px 190px;
+  }
+
+  &__stars {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 117px;
+  }
+
+  &__stars-img {
+    width: 445px;
+    height: 52px;
+    margin-bottom: 31px;
+  }
+
+  &__stars-title {
+    width: 540px;
+    height: 149px;
     font-family: $font-family;
     @include mix.font-mixin(
       36px,
       $letter-spacing-param: 0,
       $font-weight-param: 700
     );
+  }
+
+  &__stars-title-line {
+    display: block;
   }
 }
