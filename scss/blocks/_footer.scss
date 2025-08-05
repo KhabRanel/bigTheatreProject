@@ -2,31 +2,63 @@
 @use "./mixins" as mix;
 
 .footer {
-  &__contact-title {
-    margin: 112px 0 52px;
+  &__contact {
+    @include mix.desktop-wide {
+      width: 690px;
+      margin: 0 auto;
+    }
   }
 
-  &__contact-wrp {
-    width: 1085px;
-    display: flex;
-    justify-content: center;
-    gap: 49px;
-    margin-bottom: 96px;
+  &__contact-title {
+    margin: 112px 0 52px;
+
+    @include mix.desktop-wide {
+      margin: 61px 0 58px;
+    }
   }
 
   &__contact-list {
-    width: 665px;
+    width: 1085px;
+    margin-bottom: 96px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 49px;
+
+    @include mix.desktop-wide {
+      width: 690px;
+      height: 59px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 0;
+      justify-content: space-between;
+      margin-bottom: 75px;
+    }
+  }
+
+  &__contact-nested-list {
+    display: flex;
+    gap: 49px;
+
+    @include mix.desktop-wide {
+      height: 59px;
+      flex-direction: column;
+      gap: 0;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
 
   &__contact-list-item-link,
-  &__contact-adress {
+  &__contact-list-item-adress {
     text-transform: uppercase;
     @include mix.font-mixin(21px, 29px);
+
+    @include mix.desktop-wide {
+      @include mix.font-mixin(16px, 22px, 700, 0.05em);
+    }
   }
 
-  &__contact-adress {
+  &__contact-list-item-adress {
     font-style: inherit;
   }
 
@@ -36,6 +68,10 @@
     border-top: 1px solid $gray;
     align-items: end;
     margin-bottom: 41px;
+
+    @include mix.desktop-wide {
+      width: 713px;
+    }
   }
 
   &__author-desc-content,

@@ -5,6 +5,20 @@
   min-height: 550px;
   margin-top: 209px;
 
+  @include mix.desktop-wide {
+    margin-top: 99px;
+  }
+
+  &__container {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mix.desktop-wide {
+      width: 100%;
+    }
+  }
+
   .years {
     &__item-desc {
       @include mix.font-mixin(72px, 98px);
@@ -13,25 +27,39 @@
   }
 
   &__wrp {
+    display: flex;
+    box-sizing: border-box;
     background-image: url(/dist/img/review-screen.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    box-sizing: border-box;
     padding: 126px 100px 126px 190px;
+
+    @include mix.desktop-wide {
+      padding: 134px 134px 118px 168px;
+    }
   }
 
   &__stars {
     display: flex;
     flex-direction: column;
     margin: 25px 0 0 117px;
+
+    @include mix.desktop-wide {
+      margin-left: 75px;
+    }
   }
 
   &__stars-img {
     width: 445px;
     height: 52px;
     margin-bottom: 31px;
+
+    @include mix.desktop-wide {
+      width: 307px;
+      height: 39px;
+      margin-bottom: 20px;
+    }
   }
 
   &__stars-title {
@@ -43,6 +71,12 @@
       $letter-spacing-param: 0,
       $font-weight-param: 700
     );
+
+    @include mix.desktop-wide {
+      width: 457px;
+      height: 213px;
+      font-size: 34px;
+    }
   }
 
   &__stars-title-line {

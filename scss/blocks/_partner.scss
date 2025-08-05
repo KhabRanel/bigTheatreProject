@@ -4,6 +4,10 @@
 .partner {
   &__title {
     margin: 150px 0 60px;
+
+    @include mix.desktop-wide {
+      margin-top: 187px;
+    }
   }
 
   &__wrp {
@@ -16,6 +20,11 @@
     display: flex;
     justify-content: center;
     gap: 78px;
+
+    @include mix.desktop-wide {
+      width: 509px;
+      flex-wrap: wrap;
+    }
   }
 
   &__button {
@@ -23,5 +32,9 @@
     width: 359px;
     min-height: 72px;
     text-align: center;
+
+    @include mix.desktop-wide {
+      margin-top: 122px;
+    }
   }
 }

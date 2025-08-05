@@ -2,22 +2,45 @@
 @use "../mixins" as mix;
 
 .header {
-  background: url(/dist/img/header-bkg.webp);
-  padding: 51px 0 179px;
+  background-image: url(/dist/img/header-bkg.webp);
+  background-position: center;
+  padding: 50px 0 179px;
+
+  @include mix.desktop-wide {
+    padding: 48px 0 363px;
+  }
 
   &__nav-wrp {
     @include mix.flex-space-between;
     margin: 0 0 219px;
+
+    @include mix.desktop-wide {
+      width: 655px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 29px;
+      margin: 0 0 260px;
+    }
   }
 
   &__nav-list {
     display: flex;
     gap: 63px;
+
+    @include mix.desktop-wide {
+      width: 655px;
+      gap: 0;
+      justify-content: space-between;
+    }
   }
 
   &__nav-link {
     text-transform: uppercase;
     @include mix.font-mixin(18px, 25px);
+
+    @include mix.desktop-wide {
+      @include mix.font-mixin(16px, 22px, 700, 0.05em);
+    }
   }
 
   &__tel {
@@ -27,17 +50,29 @@
 
   &__content-wrp {
     @include mix.flex-space-between;
+
+    @include mix.desktop-wide {
+      display: block;
+    }
   }
 
   &__content {
     width: 540px;
     min-height: 296px;
+
+    @include mix.desktop-wide {
+      width: 655px;
+    }
   }
 
   &__title {
     margin: 88px 0 50px;
     text-transform: uppercase;
     @include mix.font-mixin(64px, 87px);
+
+    @include mix.desktop-wide {
+      margin-top: 0;
+    }
   }
 
   &__desc {
@@ -53,6 +88,16 @@
   &__link-poster {
     width: 160px;
     min-height: 50px;
+
+    @include mix.desktop-wide {
+      width: 175px;
+    }
+  }
+
+  &__slider {
+    @include mix.desktop-wide {
+      display: none;
+    }
   }
 
   &__slider-img {

@@ -4,21 +4,27 @@
 .perfomance {
   &__title {
     margin: 119px 0 113px;
+
+    @include mix.desktop-wide {
+      margin: 78px 0 94px;
+    }
   }
 
   &__wrp {
     display: flex;
   }
 
-  &__item-desc {
-    text-transform: uppercase;
-    @include mix.font-mixin(24px, 33px, 0.05em);
+  &__item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    width: 370px;
+    width: 368px;
     height: 478px;
     box-sizing: border-box;
+
+    @include mix.desktop-wide {
+      width: 346px;
+    }
 
     &--1 {
       background-image: url(/dist/img/perfomance-1.webp);
@@ -33,6 +39,15 @@
     &--3 {
       background-image: url(/dist/img/perfomance-3.webp);
       padding: 50px 145px 398px 32px;
+
+      @include mix.desktop-wide {
+        display: none;
+      }
     }
+  }
+
+  &__item-desc {
+    text-transform: uppercase;
+    @include mix.font-mixin(24px, 33px, 0.05em);
   }
 }

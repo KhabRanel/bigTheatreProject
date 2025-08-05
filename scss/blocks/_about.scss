@@ -9,38 +9,62 @@
   &__subtitle {
     text-transform: uppercase;
     @include mix.font-mixin(21px, 29px);
+
+    @include mix.desktop-wide {
+      margin-bottom: 54px;
+    }
   }
 
   &__desc {
-    margin-top: 18px;
+    margin-top: 23px;
     font-family: $font-family;
     @include mix.font-mixin(
       16px,
       $letter-spacing-param: 0,
       $font-weight-param: 400
     );
+
+    @include mix.desktop-wide {
+      margin-top: 0;
+    }
   }
 
   &__wrp {
     @include mix.flex-center();
+    align-items: flex-start;
   }
 
   &__item {
     &--1 {
       width: 449px;
       margin-right: 27px;
+
+      @include mix.desktop-wide {
+        width: 431px;
+        margin-right: 24px;
+      }
     }
 
     &--2 {
       width: 258px;
       min-height: 323px;
       margin-right: 11px;
+
+      @include mix.desktop-wide {
+        width: 214px;
+        height: 349px;
+        margin: 0;
+      }
     }
   }
 
   &__img {
     width: 369px;
     height: 323px;
+
+    @include mix.desktop-wide {
+      display: none;
+    }
   }
 
   &__digits {
@@ -50,6 +74,10 @@
   .digits {
     &__item {
       margin-top: 36px;
+
+      @include mix.desktop-wide {
+        margin-top: 50px;
+      }
     }
 
     &__desc {

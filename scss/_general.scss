@@ -6,6 +6,7 @@ body {
   @include mix.font-mixin();
   background: $dark-gray;
   color: $white;
+  overflow-x: hidden;
 }
 
 a {
@@ -26,4 +27,8 @@ a {
 .container {
   width: 1110px;
   margin: 0 auto;
+
+  @include mix.desktop-wide {
+    width: 690px;
+  }
 }

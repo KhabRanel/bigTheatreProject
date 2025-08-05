@@ -56,8 +56,8 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <section class="about">
+    <main>
+      <section class="about container">
         <h2 class="about__title section-title">
           <span class="section-title-gold">О</span> театре
         </h2>
@@ -103,29 +103,23 @@
           />
         </div>
       </section>
-      <section class="perfomance">
+      <section class="perfomance container">
         <h2 class="perfomance__title section-title">
           <span class="section-title-gold">Наши</span> постановки
         </h2>
         <div class="perfomance__wrp">
-          <div class="perfomance__item">
-            <h2 class="perfomance__item-desc perfomance__item-desc--1">
-              ОСКАР 2020
-            </h2>
+          <div class="perfomance__item perfomance__item--1">
+            <h2 class="perfomance__item-desc">ОСКАР 2020</h2>
           </div>
-          <div class="perfomance__item">
-            <h2 class="perfomance__item-desc perfomance__item-desc--2">
-              золотой грамофон
-            </h2>
+          <div class="perfomance__item perfomance__item--2">
+            <h2 class="perfomance__item-desc">золотой грамофон</h2>
           </div>
-          <div class="perfomance__item">
-            <h2 class="perfomance__item-desc perfomance__item-desc--3">
-              золотой грамофон
-            </h2>
+          <div class="perfomance__item perfomance__item--3">
+            <h2 class="perfomance__item-desc">золотой грамофон</h2>
           </div>
         </div>
       </section>
-      <section class="review">
+      <section class="review review__container">
         <div class="review__wrp">
           <div class="review__item">
             <ul class="review__item-list years">
@@ -152,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="partner">
+      <section class="partner container">
         <h2 class="partner__title section-title">
           <span class="section-title-gold">Партнеры</span> театра
         </h2>
@@ -182,34 +176,38 @@
         <h2 class="footer__contact-title section-title">
           <span class="section-title-gold">Контакты</span>
         </h2>
-        <div class="footer__contact-wrp">
-          <ul class="footer__contact-list">
-            <li class="footer__contact-list-item">
-              <a
-                href="tel:+7 (812) 123-45-55"
-                class="footer__contact-list-item-link"
-                >+7 (812) 123-45-55</a
-              >
-            </li>
-            <li class="footer__contact-list-item">
-              <a
-                href="tel:+7 (812) 123-45-66"
-                class="footer__contact-list-item-link"
-                >+7 (812) 123-45-66</a
-              >
-            </li>
-            <li class="footer__contact-list-item">
-              <a
-                href="email:info@theater.ru"
-                class="footer__contact-list-item-link"
-                >info@theater.ru</a
-              >
-            </li>
-          </ul>
-          <address class="footer__contact-adress">
-            г. санкт-петербург, невский 140
-          </address>
-        </div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-list-item">
+            <a
+              href="tel:+7 (812) 123-45-55"
+              class="footer__contact-list-item-link"
+              >+7 (812) 123-45-55</a
+            >
+          </li>
+          <li class="footer__contact-list-item">
+            <a
+              href="tel:+7 (812) 123-45-66"
+              class="footer__contact-list-item-link"
+              >+7 (812) 123-45-66</a
+            >
+          </li>
+          <li>
+            <ul class="footer__contact-nested-list">
+              <li class="footer__contact-list-item">
+                <a
+                  href="email:info@theater.ru"
+                  class="footer__contact-list-item-link"
+                  >info@theater.ru</a
+                >
+              </li>
+              <li class="footer__contact-list-item">
+                <address class="footer__contact-list-item-adress">
+                  г. санкт-петербург, невский 140
+                </address>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="footer__author-desc">
         <p class="footer__author-desc-content">
