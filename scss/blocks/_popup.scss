@@ -2,6 +2,8 @@
 @use "./mixins" as mix;
 
 .popup {
+  display: none;
+
   &__input-field::placeholder,
   &__hint {
     color: $gray;

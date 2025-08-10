@@ -9,6 +9,10 @@
     margin-top: 99px;
   }
 
+  @include mix.tablet {
+    margin-top: 90px;
+  }
+
   &__container {
     width: 1110px;
     margin-left: auto;
@@ -38,6 +42,10 @@
     @include mix.desktop-wide {
       padding: 134px 134px 118px 168px;
     }
+
+    @include mix.tablet {
+      padding: 126px 99px;
+    }
   }
 
   &__stars {
@@ -47,6 +55,10 @@
 
     @include mix.desktop-wide {
       margin-left: 75px;
+    }
+
+    @include mix.tablet {
+      margin-left: 23px;
     }
   }
 
@@ -76,6 +88,12 @@
       width: 457px;
       height: 213px;
       font-size: 34px;
+    }
+
+    @include mix.tablet {
+      width: 388px;
+      height: 121px;
+      font-size: 29px;
     }
   }
 

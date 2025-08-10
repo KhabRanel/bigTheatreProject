@@ -8,6 +8,10 @@
     @include mix.desktop-wide {
       margin-top: 187px;
     }
+
+    @include mix.tablet {
+      margin: 33px 0 56px;
+    }
   }
 
   &__wrp {
@@ -25,16 +29,26 @@
       width: 509px;
       flex-wrap: wrap;
     }
+
+    @include mix.tablet {
+      width: 478px;
+    }
   }
 
   &__button {
     margin: 113px 0 0;
     width: 359px;
-    min-height: 72px;
+    height: 72px;
     text-align: center;
 
     @include mix.desktop-wide {
       margin-top: 122px;
+    }
+
+    @include mix.tablet {
+      margin-top: 76px;
+      width: 326px;
+      height: 45px;
     }
   }
 }

@@ -10,6 +10,27 @@
     padding: 48px 0 363px;
   }
 
+  @include mix.tablet {
+    position: relative;
+    padding: 252px 114px;
+  }
+
+  &__open-nav {
+    fill: $white;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+
+    @include mix.tablet {
+      display: block;
+    }
+  }
+
   &__nav-wrp {
     @include mix.flex-space-between;
     margin: 0 0 219px;
@@ -20,6 +41,20 @@
       align-items: flex-start;
       gap: 29px;
       margin: 0 0 260px;
+    }
+
+    @include mix.tablet {
+      width: 39%;
+      height: 100%;
+      position: absolute;
+      background-color: $dark-gray;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      gap: 40px;
+      padding: 140px 47px 288px 39px;
+      box-sizing: border-box;
     }
   }
 
@@ -32,6 +67,10 @@
       gap: 0;
       justify-content: space-between;
     }
+    @include mix.tablet {
+      flex-direction: column;
+      gap: 35px;
+    }
   }
 
   &__nav-link {
@@ -40,6 +79,26 @@
 
     @include mix.desktop-wide {
       @include mix.font-mixin(16px, 22px, 700, 0.05em);
+    }
+
+    @include mix.tablet {
+      @include mix.font-mixin(24px);
+    }
+  }
+
+  &__cross {
+    fill: $white;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: none;
+
+    @include mix.tablet {
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 38px;
     }
   }
 
@@ -62,6 +121,10 @@
 
     @include mix.desktop-wide {
       width: 655px;
+    }
+
+    @include mix.tablet {
+      width: 540px;
     }
   }
 

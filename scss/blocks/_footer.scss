@@ -15,6 +15,10 @@
     @include mix.desktop-wide {
       margin: 61px 0 58px;
     }
+
+    @include mix.tablet {
+      margin: 30px 0 35px;
+    }
   }
 
   &__contact-list {
@@ -71,6 +75,10 @@
 
     @include mix.desktop-wide {
       width: 713px;
+    }
+
+    @include mix.tablet {
+      width: 690px;
     }
   }
 

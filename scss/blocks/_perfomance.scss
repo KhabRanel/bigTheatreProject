@@ -8,6 +8,10 @@
     @include mix.desktop-wide {
       margin: 78px 0 94px;
     }
+
+    @include mix.tablet {
+      margin: 90px 0 60px;
+    }
   }
 
   &__wrp {
